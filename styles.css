@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    background-color: rgb(193, 133, 118);
+}
+ul{
+    text-align: justify;
+    list-style-position: inside ;
+}
+p {
+    text-align: center;
+}
+.column {
+    float: left;
+    width: 30%;
+    padding: 2px;
+    margin-left: 45px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body {
+    background-color: antiquewhite;
+}

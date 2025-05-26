@@ -1,0 +1,85 @@
+.about-box h1 {
+    color: rgb(0, 0, 0);
+    font-size: 25;
+    text-align: left;
+    margin-left: 10px;
+    margin: 0;
+    padding: 0;
+}
+.about-box h2{
+    text-align: right;
+    margin-right: 10px;
+    font-size: 20;
+    margin: 0;
+    padding: 0;
+}
+.about-box {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(224, 220, 200);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+body {
+    background-color: beige;
+    font-family: 'Segoe UI';
+}
+
+.aboutmeimage img{
+    width: 15%;
+    border: 5px solid rgb(224, 220, 200);
+}
+
+.aboutmeimage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    text-align: center;
+    font-size: 15px;
+    color: #514f4f;
+}
+
+.summer-courses {
+    border:3px solid rgb(210, 190, 190);
+    width: 50%;
+    border-spacing: 5px;
+    margin: 0 auto;
+}
+
+.summer-course-text {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    color: #334;
+}
+
+.summer-courses th{
+    padding: 10px;
+    border: 1px solid #555;
+}
+
+.summer-courses .highlight-col {
+    background-color: rgb(225, 193, 175);
+}
+
+.hobbies-text {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    color: #334;
+}
+
+.hobbies-list {
+    text-align: justify;
+    margin: 0 auto;
+    display: block;
+    color: #334;
+    list-style-position: inside;
+    width: 10%;
+}
