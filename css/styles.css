@@ -1,26 +1,127 @@
+:root {
+  --bs-primary: rgba(255, 199, 223, 0.836);
+}
+/* Website Background Color */
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(180deg, white, #ffb8d2);
+}
+/* Soma Vatey Logo */
 h1 {
     text-align: left;
     margin-left: 25px;
 }
-
-ul{
-    text-align: justify;
-    list-style-position: inside ;
+/* Menu Bar */
+.navbar-custom .nav-link:hover {
+    color: #ffcc00;
 }
-p {
-    text-align: center;
+.navbar-custom {
+  background-color: var(--bs-primary); 
+  border-radius: 5px;
+  padding: 3px 10px;
+  margin-right: 20px;
+  display: inline-flex;
+  gap: 10px;
 }
-.column {
-    float: left;
-    width: 30%;
-    padding: 2px;
-    margin-left: 45px;
+.navbar-custom .nav-link {
+  color: #380610;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+/* Hello Text */
+.hello-text {
+    padding: 80px 25px 0 25px;
+    text-align: left;
+    margin-left: 0px;
+    font-family: 'Roboto';
+    flex: 0 0 60%;
+    min-width: 300px;
 }
-body {
-    background-color: antiquewhite;
+.hello-text h2 {
+    font-size: 200px;
+    color:#380610;
+    margin-bottom: 0px;
+    line-height: 1.1;
+}
+.hello-text p {
+    font-size: 25px;
+    font-size: italic;
+    color: #333;
+    font-weight: 400;
+    margin-left: 100px;
+    margin-top: -20px;
+}
+/* Availability Bagde */
+.availability-badge {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 10px 20px;
+    background-color: #ff76a8;
+    color: #380610;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto";
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.availability-badge i {
+    margin-right: 8px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.availability-badge:hover {
+    background-color: #ffb8d2;
+    color: #380610;
+}
+/* Image */
+.hello-section {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hello-image {
+    flex: 0 0 35%;
+    text-align: right;
+}
+.hello-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 20px;
+}
+/* Button */
+.btn {
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Roboto";
+    padding: 10px 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-contact {
+    background-color: #380610;
+    color: #ffb8d2;
+    border: 2px solid #380610;
+}
+.btn-contact:hover {
+    background-color: #ffb8d2;
+    color: #380610;
+}
+.btn-project {
+    background-color: #380610;
+    color: #ffb8d2;
+    border: 2px solid #380610;
+}
+.btn-project:hover {
+    background-color: #ffb8d2;
+    color: #380610;
 }

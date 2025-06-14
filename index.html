@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>My first practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Somavatey</title>
 </head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <body>
-    <h1>Soma Vatey</h1>
-    <div>
-        <h3><a href="about.html" target="_blank">About Me</a></h3>
-        <h3><a href="https://somavateysornportfolio.netlify.app/" target="_blank">My Portfolio</a></h3>
+    <nav class="d-flex justify-content-between align-items-center px-3 px-2">
+        <h1 class="m-0">Soma Vatey</h1>
+        <div class="navbar-custom">
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="about.html">About Me</a>
+            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#">Resume</a>
+        </div>
+    </nav>
+    <div class="hello-section d-flex align-items-center justify-content-between">
+        <div class="hello-text">
+            <h2>Hello</h2>
+            <p>__It's S.Somavatey a Cloud Enthusiast</p>
+            <span class="availability-badge">
+                <i class="bi bi-briefcase-fill"></i>Available for new opportunities
+            </span>
+            <div class="mt-4 ms-5">
+                <a href="#contact" class="btn btn-contact me-3">Get in Touch</a>
+                <a href="#projects" class="btn btn-project">Browse Project</a>
+            </div>
+        </div>
+        <div class="hello-image">
+            <img src="/images/somavatey.JPG" alt="Somavatey" class="img-fluid">
+        </div>
     </div>
-    <div class="row">
-        <div class="column">
-            <img src="images/Untitleddesign18.png" width="400" height="400">
-        </div>
-        <div class="column">
-            <img src="images/Untitleddesign16.png" width="400" height="400">
-        </div>
-        <div class="column">
-            <img src="images/Untitleddesign15.png" width="400" height="400">
-        </div>
-    </div>
+    
 </body>
 </html>
