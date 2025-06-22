@@ -6,6 +6,7 @@ body {
     min-height: 100vh;
     margin: 0;
     background: linear-gradient(180deg, white, #ffb8d2);
+    font-family: "Roboto";
 }
 /* Soma Vatey Logo */
 h1 {
@@ -27,7 +28,7 @@ h1 {
 .navbar-custom .nav-link {
   color: #380610;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   margin: 0 20px;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -37,7 +38,6 @@ h1 {
     padding: 80px 25px 0 25px;
     text-align: left;
     margin-left: 0px;
-    font-family: 'Roboto';
     flex: 0 0 60%;
     min-width: 300px;
 }
@@ -123,5 +123,58 @@ h1 {
 }
 .btn-project:hover {
     background-color: #ffb8d2;
+    color: #380610;
+}
+/* My Cloud Journey*/
+.Journey-section {
+    text-align: center;
+    padding: 100px 20px 50px;
+    color: #380610;
+}
+.Journey-section h2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.Journey-section p {
+    font-size: 16px;
+    margin: 0 auto;
+}
+.cloud-card {
+    background-color: aliceblue;
+    border: 1px solid #d48ca3;
+    transition: transform 0.3s ease;
+}
+.equal-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.Current-work {
+    text-align: center;
+    padding: 10px 20px 50px;
+    color: #380610;
+}
+.Current-work h2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+.Current-work p {
+    font-size: 16px;
+    margin: 0 auto;
+}
+/*Made by Me*/
+.poster-text {
+    font-style: italic;
+}
+.content-text {
+    font-style: italic
+}
+/*Work experiences*/
+.Work-exp {
+    text-align: center;
+    padding: 10px 20px 50px;
     color: #380610;
 }
