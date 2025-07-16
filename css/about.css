@@ -1,85 +1,74 @@
-.about-box h1 {
-    color: rgb(0, 0, 0);
-    font-size: 25;
-    text-align: left;
-    margin-left: 10px;
-    margin: 0;
-    padding: 0;
+.bg-purple {
+  background-color: #d595e4; /* Bootstrap's purple color */
+  color: white;
 }
-.about-box h2{
-    text-align: right;
-    margin-right: 10px;
-    font-size: 20;
-    margin: 0;
-    padding: 0;
+
+.slider {
+    height: 250px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
 }
-.about-box {
-    height: 100px;
+
+.slide-track {
+    display: flex;
+    width: calc(450px * 14);
+    animation: scroll 10s linear infinite;
+}
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-450px * 7));
+    }
+}
+.slide {
+    height: 250px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    perspective: 100px;
+}
+
+img {
     width: 100%;
-    background-color: rgb(224, 220, 200);
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-}
-body {
-    background-color: beige;
-    font-family: 'Segoe UI';
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 1s;
 }
 
-.aboutmeimage img{
+img:hover {
+    transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after {
+    content: '';
+    height: 100%;
+    position: absolute;
     width: 15%;
-    border: 5px solid rgb(224, 220, 200);
+    z-index: 2;
 }
 
-.aboutmeimage {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.slider::before {
+    left: 0;
+    top: 0;
 }
 
-.text {
-    text-align: center;
-    font-size: 15px;
-    color: #514f4f;
-}
-
-.summer-courses {
-    border:3px solid rgb(210, 190, 190);
-    width: 50%;
-    border-spacing: 5px;
-    margin: 0 auto;
-}
-
-.summer-course-text {
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    color: #334;
-}
-
-.summer-courses th{
-    padding: 10px;
-    border: 1px solid #555;
-}
-
-.summer-courses .highlight-col {
-    background-color: rgb(225, 193, 175);
-}
-
-.hobbies-text {
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    color: #334;
-}
-
-.hobbies-list {
-    text-align: justify;
-    margin: 0 auto;
-    display: block;
-    color: #334;
-    list-style-position: inside;
-    width: 10%;
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
 }

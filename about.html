@@ -1,21 +1,211 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>About me - Somavatey</title>
+    <title>About Me | Somavatey</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Learn more about Somavatey, a cloud enthusiast with passion for cloud-native solutions and innovation." />
+    <meta name="keywords" content="About Somavatey, Cloud Computing, Portfolio" />
+    <meta name="author" content="Somavatey" />
+
+    <!-- Fixed Font Awesome CDN (no integrity) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <body>
-    <section class="about-section text-center py-5">
-        <div class="banner-strip d-flex justify-content-around align-items-center text-white fw-bold">
-            <div>Learn</div>
-            <div>Launch</div>
-            <div>Lead</div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Soma Vatey</a>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="images/SornSomavateyResume.pdf" download="Somavatey_Resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main About Section -->
+    <section class="container py-5" style="margin-top: 100px;">
+        <div class="row align-items-center">
+            <!-- Photo -->
+            <div class="col-md-4 text-center">
+                <div class="rounded-circle overflow-hidden shadow" style="width: 250px; height: 320px; margin: auto;">
+                    <img src="/images/tradionaldance.jpg" alt="Somavatey" class="img-fluid" />
+                </div>
+            </div>
+
+            <!-- Intro + Timeline -->
+            <div class="col-md-8">
+                <h1 class="fw-bold mb-4" style="color: #380610;">Somavatey Sorn</h1>
+
+                <p class="fs-5 text-muted mb-4">
+                    I’ve always loved learning, building, and sharing — whether it’s designing visuals, translating languages, or collaborating on tech projects that bring ideas to life.
+                </p>
+
+                
+                <!-- Timeline -->
+                <ul class="list-unstyled mb-4">
+                    <li class="mb-3">
+                        <strong>🎨A love for creativity:</strong> Enjoy drawing and making posters — a quiet way to express myself.
+                    </li>
+                    <li class="mb-3">
+                        <strong>💄Simple joys:</strong> Sharing thoughts through my makeup blog and exploring new styles at my own pace.
+                    </li>
+                    <li class="mb-3">
+                        <strong>🎥Capturing moments:</strong> Making YouTube videos about everyday life and small adventures.
+                    </li>
+                    <li class="mb-3">
+                        <strong>💃Embracing culture:</strong> Practicing traditional dance and finding peace in movement.
+                    </li>
+                    <li class="mb-3">
+                        <strong>🪴Quiet growth:</strong> Studying hard, learning new skills, and enjoying the journey without rush.
+                    </li>
+                </ul>
+                <!-- Traits / Interests -->
+                <div>
+                    <span class="badge bg-primary me-2 mb-2">Cloud Enthusiast</span>
+                    <span class="badge bg-purple text-dark me-2 mb-2">Art & Design Lover</span>
+                    <span class="badge bg-danger text-dark me-2 mb-2">YouTube Creator</span>
+                    <span class="badge bg-warning me-2 mb-2">Passionate Dancer</span>
+                    <span class="badge bg-success me-2 mb-2">Collaborative Spirit</span>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- Skills & Expertise Section with AWS Badges -->
+    <section class="container py-5">
+        <h2 class="fw-bold mb-4" style="color: #380610;">AWS BAGES</h2>
+        <div class="d-flex flex-wrap gap-3 justify-content-center align-items-center">
+            <!-- AWS Certified Cloud Practitioner Badge -->
+            <a href="https://www.credly.com/badges/fc810d7f-dcfc-4403-8aa8-a649a831ee74/public_url" target="_blank" rel="noopener noreferrer">
+                <img src="/images/aws-academy-graduate-aws-academy-cloud-foundations.png" alt="AWS Academy Cloud Practitioner" style="height: 250px;">
+            </a>
+
+            <!-- AWS Certified Solutions Architect - Associate Badge -->
+            <a href="https://www.credly.com/badges/3965b4c5-25df-41c8-be87-e1614dacad1e/public_url" target="_blank" rel="noopener noreferrer">
+                <img src="/images/aws-academy-graduate-aws-academy-cloud-operations.png" alt="AWS Academy Cloud Operation" style="height: 250px;">
+            </a>
+
+            <!-- AWS Certified Developer - Associate Badge -->
+            <a href="https://www.credly.com/badges/64f3ca74-371f-4002-849f-628c4e8bf07b/public_url" target="_blank" rel="noopener noreferrer">
+                <img src="/images/aws-academy-graduate-aws-academy-cloud-developing.png" alt="AWS Academy Cloud Developing" style="height: 250px;">
+            </a>
+        </div>
+    </section>
+
+    <!-- Additional Ideas for About Me -->
+    <!--Slider-->
+    <div class="slider">
+        <div class="slide-track">
+            <!-- 7 slides-->
+            <div class="slide">
+                <img src="/images/IMG_3898.JPG" alt="Art Piece 1">
+            </div>
+            <div class="slide">
+                <img src="/images/IMG_4340.JPG" alt="Art Piece 2">
+            </div>
+            <div class="slide">
+                <img src="/images/IMG_7549.JPG" alt="Art Piece 3">
+            </div>
+            <div class="slide">
+                <img src="/images/IMG_8576.JPG" alt="Art Piece 4">
+            </div>
+            <div class="slide">
+                <img src="/images/IMG_8970.JPG" alt="Art Piece 5">
+            </div>
+            <div class="slide">
+                <img src="/images/IMG_6383.JPG" alt="Art Piece 6">
+            </div>
+            <div class="slide">
+                <img src="/images/IMG_8014.JPG" alt="Art Piece 7">
+            </div>
+
+            <!-- 7 slides-->
+            <div class="slide">
+                <img src="/images/IMG_3898.JPG" alt="Art Piece 1">
+            </div>
+            <div class="slide">
+                <img src="/images/IMG_4340.JPG" alt="Art Piece 2">
+            </div>
+            <div class="slide">
+                <img src="/images/IMG_7549.JPG" alt="Art Piece 3">
+            </div>
+            <div class="slide">
+                <img src="/images/IMG_8576.JPG" alt="Art Piece 4">
+            </div>
+            <div class="slide">
+                <img src="/images/IMG_8970.JPG" alt="Art Piece 5">
+            </div>
+            <div class="slide">
+                <img src="/images/IMG_6383.JPG" alt="Art Piece 6">
+            </div>
+            <div class="slide">
+                <img src="/images/IMG_8014.JPG" alt="Art Piece 7">
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-muted border-top mt-5 pt-4">
+        <div class="py-4">
+            
+            <!-- About -->
+            <div class="text-center mb-4 px-3">
+                <h5 class="text-dark fw-bold">About Me</h5>
+                <p style="max-width: 700px; margin: 0 auto;">
+                    I'm S. Somavatey — a Cloud Enthusiast passionate about building scalable, secure, and modern cloud-native solutions.
+                    I blend creativity and technology to bring innovative ideas to life.
+                </p>
+            </div>
+
+            <!-- Social + Contact Row -->
+            <div class="row text-center text-md-start align-items-center mx-0 px-4">
+            <!-- Social Links -->
+            <div class="col-md-6 mb-3 mb-md-0">
+                <h6 class="fw-semibold mb-2">Connect with me</h6>
+                <a href="https://www.instagram.com/__jjein__?igsh=aXR0a2p1NWx5emp4&utm_source=qr" class="text-muted mx-2 fs-4" aria-label="Visit our Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@jeinjein1318?si=523_5b9q8dSpqfjQ" class="text-muted mx-2 fs-4" aria-label="Visit our Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="www.linkedin.com/in/somavatey-sorn-420606288" class="text-muted mx-2 fs-4" aria-label="Visit our LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sornsomavatey" class="text-muted mx-2 fs-4" aria-label="Visit our GitHub" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-6 text-md-end">
+                    <h6 class="fw-semibold mb-2">Contact</h6>
+                    <p class="mb-0">Email: <a href="mailto:somavateysorn@gmail.com" class="text-muted">somavateysorn@gmail.com</a></p>
+                    <p class="mb-0">Phone: <span class="text-muted">+855 70 358 567</span></p>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-4">
+                <p class="text-muted small mb-0">© 2025 S. Somavatey. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

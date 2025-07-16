@@ -1,0 +1,32 @@
+.bg-purple {
+  background-color: #d595e4; /* Bootstrap's purple color */
+  color: white;
+}
+.card-img-top {
+  width: 100%;
+  height: 250px; /* fixed height for all images */
+  object-fit: cover; /* crop & cover the image nicely */
+  border-radius: 15px; /* rounded corners */
+}
+a.card:hover {
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(56, 6, 16, 0.6);
+  transition: box-shadow 0.3s ease;
+}
+a.text-decoration-none.text-dark {
+  text-decoration: none;  /* remove underline */
+  color: inherit;         /* inherit text color */
+}
+
+a.text-decoration-none.text-dark .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+a.text-decoration-none.text-dark:hover .card,
+a.text-decoration-none.text-dark:focus .card {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+

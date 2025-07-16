@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <button onclick="fecthNews()">Get Random News</button>
+    <div id="news" class="row"></div>
+    <!-- <img id="dogImage" width="300px" /> -->
+    <script>
+      function fecthNews() {
+        let allSections = [];
+        fetch("https://khmerfairies.com/tools/public/api/all-sections")
+          .then((Response) => Response.json())
+          .then((data) => {
+            allSections = data;
+            //console.log(allSections);
+          });
+        // fetch("https://dog.ceo/api/breeds/image/random")
+        fetch("https://khmerfairies.com/tools/public/api/all-news")
+          .then((Response) => Response.json())
+          .then((data) => {
+            let items = "";
+            for (let j = 0; j < allSections.length; j++) {
+              items += `<h2>${allSections[j]}</h2>`;
+              for (let i = 0; i < 5; i++) {
+                items += `<div class="col-4 bg-primary">${
+                  data[allSections[j]][i].title
+                }</div>`;
+              }
+            }
+            document.getElementById("news").innerHTML = items;
+            console.log(data);
+            /*console.log(data.url);
+            console.log(data.message);*/
+          })
+
+          .catch((error) => console.log("Error:", error));
+      }
+    </script>
+  </body>
+</html>

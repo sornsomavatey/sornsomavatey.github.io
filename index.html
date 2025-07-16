@@ -1,170 +1,270 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-    <!--META TAGS-->
     <title>Somavatey | Cloud Computing Portfolio & Projects</title>
-    <meta name="description" content="Explore Somavatey’s cloud computing portfolio — a unique blend of tech projects, creativity, and real-world experience in cloud technologies.">
-    <meta name="keywords" content="cloud computing portfolio, tech portfolio, AWS projects, personal cloud website, Somavatey">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Explore my portfolio showcasing cloud computing projects, skills, and experiences. Available for new opportunities." />
+    <meta name="keywords" content="Cloud Computing, Portfolio, Projects, Cloud Native Development, CI/CD, Cloud Operation" />
+    <meta name="author" content="Somavatey" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <!-- Fixed Font Awesome CDN (no integrity) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <body>
-    <nav class="d-flex justify-content-between align-items-center px-3 px-2">
-        <h1 class="m-0">Soma Vatey</h1>
-        <div class="navbar-custom">
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="about.html">About Me</a>
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="#">Contact</a>
-            <a class="nav-link" href="#">Resume</a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Soma Vatey</a>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="images/SornSomavateyResume.pdf" download="Somavatey_Resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <div class="hello-section d-flex align-items-center justify-content-between">
-        <div class="hello-text">
-            <h2>Hello</h2>
-            <p>__It's S.Somavatey a Cloud Enthusiast</p>
-            <span class="availability-badge">
-                <i class="bi bi-briefcase-fill"></i>Available for new opportunities
+    <!-- Hello Section -->
+    <section class="hello-section container d-flex flex-column flex-md-row align-items-center justify-content-between my-5 py-5" style="margin-top: 100px;">
+    <!-- Text content -->
+        <div class="hello-text text-center d-flex flex-column align-items-center justify-content-center w-100">
+            <h1 class="fw-bold mb-3" style="font-size: 2.5rem; color: #380610;">
+                Hi, I’m <span style="color: #ff76a8;">S. Somavatey</span>
+            </h1>
+
+            <!-- Availability badge and buttons stacked and centered -->
+            <span class="availability-badge d-inline-flex align-items-center gap-2 px-3 py-2 shadow-sm mb-4" style="font-size: 1.2rem;">
+                <i class="bi bi-briefcase-fill fs-4"></i> Available for new opportunities
             </span>
-            <div class="mt-4 ms-5">
-                <a href="#contact" class="btn btn-contact me-3">Get in Touch</a>
-                <a href="#projects" class="btn btn-project" onclick="myFunction()">Browse Project</a>
+
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="#contact" class="btn btn-contact btn-lg shadow">Get in Touch</a>
+                <a href="projects.html" class="btn btn-project btn-lg shadow">Browse Projects</a>
             </div>
         </div>
-        <div class="hello-image">
-            <img src="/images/vatey.JPG" alt="Somavatey" class="img-fluid">
+        <!-- Image content -->
+        <div class="hello-image flex-shrink-0 mt-5 mt-md-0 text-center">
+            <img src="/images/vatey.JPG" alt="Somavatey" style="max-width: 320px;" />
         </div>
-    </div>
-    <div class="Journey-section">
-        <div class="Journey-text">
-            <h2>My Cloud Journey</h2>
-            <p>Chasing the clouds, building the future - this is where my tech story takes flights</p>
+    </section>
+
+
+
+    <!-- Journey Section - Modern Portfolio Style -->
+    <section class="Journey-section container my-5 py-5">
+        <div class="Journey-text text-center mb-5">
+            <h2 class="fw-bold" style="color:#380610; font-size: 1.8rem;">☁️ My Cloud Journey</h2>
+            <p class="text-muted fs-5">From theory to deployment — here's what I’ve built in the cloud.</p>
         </div>
-        <div class="Container my-5">
-            <div class="row gy-4 justify-content-center">
-                <!--Cloud Computing-->
-                <div class="col-md-5 d-flex">
-                    <div class="card p-3 border-dark-subtle rounded-4 shadow cloud-card w-100">
-                        <h5 class="fw-bold">Cloud Computing</h5>
-                        <p class=" text-muted">
-                            Achieved a score of 642 on the AWS Certified Cloud Practitioner exam, demonstrating a strong foundational understanding of cloud concepts and services.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="images/1.JPG" class="equal-image" alt="Cloud Computing">
-                    </div>
-                </div>
-                <!-- Cloud Developing CI/CD -->
-                <div class="col-md-5 d-flex">
-                    <div class="card p-3 border-dark-subtle rounded-4 shadow cloud-card w-100">
-                        <h5 class="fw-bold">Cloud Developing CI/CD</h5>
-                        <p class="text-muted">
-                        Experienced in cloud development using CI/CD pipelines for fast, automated, and reliable code deployment.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="images/3.jpeg" class="equal-image" alt="Cloud Computing">
-                    </div>
-                </div>
-                <!-- Cloud Operation -->
-                <div class="col-md-5 d-flex">
-                    <div class="card p-3 border-dark-subtle rounded-4 shadow cloud-card w-100">
-                        <h5 class="fw-bold">Cloud Operation</h5>
-                        <p class="text-muted">
-                        Skilled in managing, monitoring, and optimizing cloud systems for smooth and secure operations.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="images/2.jpeg" class="equal-image" alt="Cloud Computing">
-                    </div>
-                </div>
-                <!-- Cloud Native Development -->
-                <div class="col-md-5 d-flex">
-                    <div class="card p-3 border-dark-subtle rounded-4 shadow cloud-card w-100">
-                        <h5 class="fw-bold">Cloud Native Development</h5>
-                        <p class="text-muted">
-                        Skilled in building cloud-native apps using containers, microservices, and scalable architecture for modern cloud environments.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="images/4.jpeg" class="equal-image" alt="Cloud Computing">
+
+        <div class="row gy-4">
+            <!-- Card 1 -->
+            <div class="col-md-6">
+                <div class="journey-card card border-0 shadow rounded-4 h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="journey-icon mb-3">
+                            <i class="bi bi-cloud-fill fs-1 text-white"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Cloud Computing</h5>
+                        <p class="text-muted">Scored 642 on AWS Certified Cloud Practitioner exam. Skilled in EC2, S3, IAM, and core cloud services.</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-6">
+                <div class="journey-card card border-0 shadow rounded-4 h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="journey-icon mb-3">
+                            <i class="bi bi-git fs-1 text-white"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">CI/CD Development</h5>
+                        <p class="text-muted">Built automated pipelines for Node.js apps using GitHub Actions and Docker on AWS EC2.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-6">
+                <div class="journey-card card border-0 shadow rounded-4 h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="journey-icon mb-3">
+                            <i class="bi bi-bar-chart-line-fill fs-1 text-white"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Cloud Operations</h5>
+                        <p class="text-muted">Used monitoring tools to track uptime, logs, and security metrics across deployed services.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-6">
+                <div class="journey-card card border-0 shadow rounded-4 h-100">
+                    <div class="card-body text-center p-4">
+                        <div class="journey-icon mb-3">
+                            <i class="bi bi-boxes fs-1 text-white"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2">Cloud Native Apps</h5>
+                        <p class="text-muted">Developed scalable microservices using Docker, MongoDB Atlas, and deployed with Kubernetes (Minikube).</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="Current-work">
-        <div class="currentwork-text">
+    </section>
+
+
+    <!-- Current Work Section -->
+    <section class="Current-work container my-5">
+        <div class="currentwork-text text-center mb-4">
             <h2>Made by Me</h2>
             <p>A collection of creative pieces I’ve personally made.</p>
         </div>
-        <div class="container my-5">
             <!-- Posters Section -->
-            <section class="mb-5">
+        <section class="mb-5">
             <h4 class="poster-text mb-3">🎨 Poster Designs</h4>
             <div class="row g-4">
                 <div class="col-md-4">
-                <img src="images/poster1.png" class="img-fluid rounded shadow-sm" alt="Poster 1">
+                    <img src="images/poster1.png" class="img-fluid rounded shadow-sm" alt="Poster 1" />
                 </div>
                 <div class="col-md-4">
-                <img src="images/poster2.png" class="img-fluid rounded shadow-sm" alt="Poster 2">
+                    <img src="images/poster2.png" class="img-fluid rounded shadow-sm" alt="Poster 2" />
                 </div>
                 <div class="col-md-4">
-                <img src="images/poster3.png" class="img-fluid rounded shadow-sm" alt="Poster 3">
+                    <img src="images/poster3.png" class="img-fluid rounded shadow-sm" alt="Poster 3" />
                 </div>
             </div>
-            </section>
-            <!-- YouTube Section -->
-            <section>
-            <h4 class="content-text mb-3">📸 My YouTube Videos</h4>
-            <div class="row g-4">
-                <div class="col-md-4">
+    </section>
+
+    <!-- YouTube Section -->
+    <section>
+        <h4 class="content-text mb-3">📸 My YouTube Videos</h4>
+        <div class="row g-4">
+            <div class="col-md-4">
                 <a href="https://youtu.be/g-stneiQUVI?si=VK0VUdENCTFbeY6T" target="_blank" class="text-decoration-none">
                     <div class="card h-100 shadow-sm">
-                    <img src="images/youtube-thumb1.png" class="card-img-top" alt="YouTube Thumbnail 1">
-                    <div class="card-body">
-                        <h6 class="card-title text-dark">Spend a Weekend with Me ✨🏋️‍♀️🍜🌹- Busy week, Going out, Gym</h6>
-                    </div>
+                        <img src="images/youtube-thumb1.png" class="card-img-top" alt="YouTube Thumbnail 1" />
+                        <div class="card-body">
+                            <h6 class="card-title text-dark">Spend a Weekend with Me ✨🏋️‍♀️🍜🌹- Busy week, Going out, Gym</h6>
+                        </div>
                     </div>
                 </a>
-                </div>
-                <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
                 <a href="https://youtu.be/Kh-PmYLQJVg?si=6tfPfOEYCDwZ1Wxh" target="_blank" class="text-decoration-none">
                     <div class="card h-100 shadow-sm">
-                    <img src="images/youtube-thumb2.png" class="card-img-top" alt="YouTube Thumbnail 2">
-                    <div class="card-body">
-                        <h6 class="card-title text-dark">Is Cloud Native replacing Cloud Computing ?</h6>
-                    </div>
+                        <img src="images/youtube-thumb2.png" class="card-img-top" alt="YouTube Thumbnail 2" />
+                        <div class="card-body">
+                            <h6 class="card-title text-dark">Is Cloud Native replacing Cloud Computing ?</h6>
+                        </div>
                     </div>
                 </a>
-                </div>
-                <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
                 <a href="https://youtu.be/l7Fc9MJ65MU?si=eEjCRkbo9Rwm7fCP" target="_blank" class="text-decoration-none">
                     <div class="card h-100 shadow-sm">
-                    <img src="images/youtube-thumb3.png" class="card-img-top" alt="YouTube Thumbnail 3">
-                    <div class="card-body">
-                        <h6 class="card-title text-dark">Haft day vlog as a Khmer Traditional Dancer🥰</h6>
-                    </div>
+                        <img src="images/youtube-thumb3.png" class="card-img-top" alt="YouTube Thumbnail 3" />
+                        <div class="card-body">
+                            <h6 class="card-title text-dark">Haft day vlog as a Khmer Traditional Dancer🥰</h6>
+                        </div>
                     </div>
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Work Experience Section -->
+    <section class="work-exp container my-5">
+        <div class="work-exp-text text-center mb-5">
+            <h2 class="mb-3" style="color: #380610;">Latest Work Experience</h2>
+            <p class="text-muted">Each role is a new chapter, shaping the way I grow and contribute.</p>
+        </div>
+        <div class="timeline">
+            <!-- Experience 1 -->
+            <div class="timeline-item p-4 shadow rounded-4 mb-4" style="background: linear-gradient(135deg, #ffe6f0, #fff0f6);">
+                <h5 class="fw-bold mb-1"><i class="bi bi-film me-2" style="color:#ff76a8;"></i>English Subtitle Translator</h5>
+                <p class="fst-italic text-secondary mb-2">Film Company — 2024</p>
+                <p>Translated English subtitles for various films ensuring accuracy and cultural relevance.</p>
+                <p><strong>Key Achievement:</strong> Delivered subtitles on tight deadlines for major film releases.</p>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="timeline-item p-4 shadow rounded-4 mb-4" style="background: linear-gradient(135deg, #d1e7ff, #e7f1ff);">
+                <h5 class="fw-bold mb-1"><i class="bi bi-translate me-2" style="color:#3a7bd5;"></i>Khmer-English Translator</h5>
+                <p class="fst-italic text-secondary mb-2">Translation Transformer International (TTI) — 2024</p>
+                <p>Provided professional Khmer-English translation services for clients, maintaining high quality and consistency.</p>
+                <p><strong>Key Achievement:</strong> Handled over 200 projects with 99% client satisfaction.</p>
+            </div>
+
+            <!-- Experience 3 -->
+            <div class="timeline-item p-4 shadow rounded-4 mb-4" style="background: linear-gradient(135deg, #fff8dc, #fffdf0);">
+                <h5 class="fw-bold mb-1"><i class="bi bi-cup-straw me-2" style="color:#f0a500;"></i>Barista</h5>
+                <p class="fst-italic text-secondary mb-2">Cyclo Cafe — 2023</p>
+                <p>Prepared and served beverages.</p>
+                <p><strong>Key Achievement:</strong> Consistently delivered friendly service during busy hours.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-muted border-top mt-5 pt-4">
+        <div class="py-4">
+            
+            <!-- About -->
+            <div class="text-center mb-4 px-3">
+                <h5 class="text-dark fw-bold">About Me</h5>
+                <p style="max-width: 700px; margin: 0 auto;">
+                    I'm S. Somavatey — a Cloud Enthusiast passionate about building scalable, secure, and modern cloud-native solutions.
+                    I blend creativity and technology to bring innovative ideas to life.
+                </p>
+            </div>
+
+            <!-- Social + Contact Row -->
+            <div class="row text-center text-md-start align-items-center mx-0 px-4">
+            <!-- Social Links -->
+            <div class="col-md-6 mb-3 mb-md-0">
+                <h6 class="fw-semibold mb-2">Connect with me</h6>
+                <a href="https://www.instagram.com/__jjein__?igsh=aXR0a2p1NWx5emp4&utm_source=qr" class="text-muted mx-2 fs-4" aria-label="Visit our Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@jeinjein1318?si=523_5b9q8dSpqfjQ" class="text-muted mx-2 fs-4" aria-label="Visit our Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="www.linkedin.com/in/somavatey-sorn-420606288" class="text-muted mx-2 fs-4" aria-label="Visit our LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sornsomavatey" class="text-muted mx-2 fs-4" aria-label="Visit our GitHub" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-6 text-md-end">
+                    <h6 class="fw-semibold mb-2">Contact</h6>
+                    <p class="mb-0">Email: <a href="mailto:somavateysorn@gmail.com" class="text-muted">somavateysorn@gmail.com</a></p>
+                    <p class="mb-0">Phone: <span class="text-muted">+855 70 358 567</span></p>
                 </div>
             </div>
-            </section>
+
+            <!-- Copyright -->
+            <div class="text-center mt-4">
+                <p class="text-muted small mb-0">© 2025 S. Somavatey. All rights reserved.</p>
+            </div>
         </div>
-    </div>
-    <div class="Work-exp">
-        <div class="Workexp-text">
-            <h2>My Latest Work Experiences</h2>
-            <p>Each role is a new chapter, shaping the way I grow and contribute.</p>
-        </div>
-    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/Java/index.js"></script>
 </body>
 </html>

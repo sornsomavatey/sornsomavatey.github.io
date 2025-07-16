@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Me | Somavatey Portfolio</title>
+    <meta name="description" content="Get in touch with Somavatey. Fill out the contact form or find my email and phone number here." />
+    <meta name="keywords" content="contact, somavatey, portfolio, email, phone, message" />
+    <meta name="author" content="Somavatey Sorn" />
+
+    <!-- Fixed Font Awesome CDN (no integrity) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Soma Vatey</a>
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="images/SornSomavateyResume.pdf" download="Somavatey_Resume.pdf">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="container justify-content-between my-5 py-5" style="max-width: 600px;">
+        <h2 class="mb-4 text-center fw-bold">Contact Me</h2>
+
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label fw-semibold">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your full name" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label fw-semibold">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="your.email@example.com" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label fw-semibold">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary fw-bold">Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-muted border-top mt-5 pt-4">
+        <div class="py-4">
+            
+            <!-- About -->
+            <div class="text-center mb-4 px-3">
+                <h5 class="text-dark fw-bold">About Me</h5>
+                <p style="max-width: 700px; margin: 0 auto;">
+                    I'm S. Somavatey — a Cloud Enthusiast passionate about building scalable, secure, and modern cloud-native solutions.
+                    I blend creativity and technology to bring innovative ideas to life.
+                </p>
+            </div>
+
+            <!-- Social + Contact Row -->
+            <div class="row text-center text-md-start align-items-center mx-0 px-4">
+            <!-- Social Links -->
+            <div class="col-md-6 mb-3 mb-md-0">
+                <h6 class="fw-semibold mb-2">Connect with me</h6>
+                <a href="https://www.instagram.com/__jjein__?igsh=aXR0a2p1NWx5emp4&utm_source=qr" class="text-muted mx-2 fs-4" aria-label="Visit our Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://youtube.com/@jeinjein1318?si=523_5b9q8dSpqfjQ" class="text-muted mx-2 fs-4" aria-label="Visit our Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="www.linkedin.com/in/somavatey-sorn-420606288" class="text-muted mx-2 fs-4" aria-label="Visit our LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/sornsomavatey" class="text-muted mx-2 fs-4" aria-label="Visit our GitHub" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+
+                <!-- Contact Info -->
+                <div class="col-md-6 text-md-end">
+                    <h6 class="fw-semibold mb-2">Contact</h6>
+                    <p class="mb-0">Email: <a href="mailto:somavateysorn@gmail.com" class="text-muted">somavateysorn@gmail.com</a></p>
+                    <p class="mb-0">Phone: <span class="text-muted">+855 70 358 567</span></p>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-4">
+                <p class="text-muted small mb-0">© 2025 S. Somavatey. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
